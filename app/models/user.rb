@@ -4,8 +4,9 @@ class User < ApplicationRecord
 
     validates :name, :email, :adress, :phone, presence: true
     validates :email, uniqueness: true
-    end
-
-
-
+    validates :phone, length: {
+        minimum: 8,
+        maximum: 11
+    }
+    
 end

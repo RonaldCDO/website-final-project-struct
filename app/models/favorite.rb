@@ -15,4 +15,8 @@ class Favorite < ApplicationRecord
   #   return arr
   # end
 
+  # Favorite.each
+  # temp = Favorite.all
+  # temp.each()
+
 end
