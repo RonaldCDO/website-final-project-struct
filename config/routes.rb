@@ -12,6 +12,10 @@ Rails.application.routes.draw do
         patch 'update/:id', to: 'favorites#update'
         delete 'delete/:id', to: 'favorites#delete'
       end
+      scope 'types' do
+        get 'index', to: 'types#index'
+        get 'show/:id', to: 'types#show'
+      end
     end
   end
 
