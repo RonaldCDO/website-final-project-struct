@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   namespace 'api' do 
     namespace 'v1' do 
-      scope 'favorites' do 
+      scope 'favorites/' do 
         get 'index', to: 'favorites#index'
         get 'show/:id', to: 'favorites#show'
         post 'create', to: 'favorites#create'
@@ -13,12 +13,12 @@ Rails.application.routes.draw do
         delete 'delete/:id', to: 'favorites#delete'
       end
       
-      scope 'types' do
+      scope 'types/' do
         get 'index', to: 'types#index'
         get 'show/:id', to: 'types#show'       
       end
       
-      scope 'products' do
+      scope 'products/' do
         get 'index', to:'products#index'
         get 'show/:id', to:'products#show'
         get 'category/:type_id', to: 'products#show_category'
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
         delete 'delete/:id', to:'products#delete'
       end
       
-      scope 'users' do
+      scope 'users/' do
         get 'login', to: 'users#login'
         get 'authentication_failure', to: 'application#authentication_failure', as: :authentication_failure
         get 'logout', to: 'user#logout'

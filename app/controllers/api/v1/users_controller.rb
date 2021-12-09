@@ -26,10 +26,12 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create
-        user = User.new(user_params)
+        # user = User.new(user_params)
+        user = User.new(email: params[:email], password: params[:password], name: params[:name], 
+                        adress: params[:adress], phone: params[:phone], is_admin: params[:is_admin])
         user.save!
         render json: user, status: :created
-    rescue StandardError
+    rescue StandardError => e
         head(:unprocessable_entity)
     end
 
