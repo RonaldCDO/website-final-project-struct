@@ -25,28 +25,35 @@ types = Type.create([{kind: "Pizza Salgada"},
 
 products = Product.create([{name:"Mussarela", price:"R$29.99", type_id: 1},
                             {name:"Calabresa", price:"R$32.99", type_id: 1},
-                            {name:"Marguerita", price:"R$22.99", type_id: 3},
+                            {name:"Portuguesa", price:"R$30.99", type_id: 1},
+                            {name:"Lombo Canadense", price:"R$29.99", type_id: 1},
+                            {name:"Milho c/ Bacon", price:"R$32.99", type_id: 1},
+                            {name:"Pepperoni", price:"R$32.99", type_id: 1},
+                            {name:"Quatro-Queijos", price:"R$32.99", type_id: 1},
+                            {name:"Carne de Sol c/ Requeijão", price:"R$32.99", type_id: 1},
+                            {name:"Frango c/ Catupiry", price:"R$29.99", type_id: 1},
                             {name:"Chocolate", price:"R$29.99", type_id: 2},
-                            {name:"Frango c/Catupiry", price:"R$29.99", type_id: 1},
-                            {name:"Heineken", price:"R$7.99", type_id: 4},
-                            {name:"Budweiser", price:"R$6.99", type_id: 1},
-                            {name:"Suco de Laranja", price:"R$5.00", type_id: 5},
-                            {name:"Limonada", price:"R$5.00", type_id: 5},
-
+                            {name:"Banana c/ Canela", price:"R$29.99", type_id: 2},
+                            {name:"Chocolate Branco", price:"R$29.99", type_id: 2},
+                            {name:"Sorvete", price:"R$29.99", type_id: 2},
+                            {name:"Brigadeiro", price:"R$29.99", type_id: 2},
+                            {name:"Romeu e Julieta", price:"R$29.99", type_id: 2},
+                            {name:"Marguerita", price:"R$22.99", type_id: 3},
+                            {name:"Cogumelo c/ Queijo", price:"R$22.99", type_id: 3},
+                            {name:"Brócolis e Palmito", price:"R$22.99", type_id: 3},
+                            {name:"Cerveja Long neck", price:"R$8.99", type_id: 4},
+                            {name:"Chope", price:"R$11,99", type_id: 4},
+                            {name:"Gin Tônica", price:"R$21.99", type_id: 4},
+                            {name:"Caipirinhas", price:"R$19.99", type_id: 4},
+                            {name:"Taça de Vinho", price:"A partir de R$15.99", type_id: 4},
+                            {name:"Garrafa de Vinho", price:"A partir de R$79.99", type_id: 4},
+                            {name:"Sucos", price:"R$7.00", type_id: 5},
+                            {name:"Chá", price:"R$10.00", type_id: 5},
+                            {name:"Regrigerante lata", price:"R$5.00", type_id: 5},
+                            {name:"Refirgerante 2L", price:"R$15.00", type_id: 5},
+                            {name:"Agua s/ gás", price:"R$3.50", type_id: 5},
+                            {name:"Água c/ gás", price:"R$3.50", type_id: 5}
+                                              
 ])
 
-favorites = Favorite.create([{user_id: 1, product_id: 1},
-                            {user_id:2 , product_id: 3},
-                            {user_id:3 , product_id: 4},
-                            {user_id:1 , product_id: 5},
-                            {user_id:4 , product_id: 5},
-                            {user_id:3 , product_id: 6},
-                            {user_id:5 , product_id: 2},
-                            {user_id:6 , product_id: 8},
-                            {user_id:7 , product_id: 7}])
-
-# u = User.find_by("id": 1)
-# u.photo.attach(io: File.open('./public/img.jpg'), filename: 'img.jpg')         
-    
-# p = Product.find_by("id": 1)
-# p.photo.attach(io: File.open('./public/img2.jpg'), filename: 'img2.jpg')         
+favorites = Favorite.create()
