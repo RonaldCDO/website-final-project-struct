@@ -44,3 +44,9 @@ favorites = Favorite.create([{user_id: 1, product_id: 1},
                             {user_id:5 , product_id: 2},
                             {user_id:6 , product_id: 8},
                             {user_id:7 , product_id: 7}])
+
+# u = User.find_by("id": 1)
+# u.photo.attach(io: File.open('./public/img.jpg'), filename: 'img.jpg')         
+    
+# p = Product.find_by("id": 1)
+# p.photo.attach(io: File.open('./public/img2.jpg'), filename: 'img2.jpg')         

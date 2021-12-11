@@ -60,7 +60,8 @@ class Api::V1::UsersController < ApplicationController
             :name,
             :adress,
             :phone,
-            :is_admin
+            :is_admin,
+            :photo
         )
     end
 end

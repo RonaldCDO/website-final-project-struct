@@ -16,4 +16,6 @@ class User < ApplicationRecord
         maximum: 11
     } 
 
+  has_one_attached :photo
+
 end
