@@ -41,8 +41,8 @@ products = Product.create([{name:"Mussarela", price:"R$29.99", type_id: 1},
                             {name:"Marguerita", price:"R$22.99", type_id: 3},
                             {name:"Cogumelo c/ Queijo", price:"R$22.99", type_id: 3},
                             {name:"Brócolis e Palmito", price:"R$22.99", type_id: 3},
-                            {name:"Heineken", price:"R$7.99", type_id: 4},
-                            {name:"Budweiser", price:"R$6.99", type_id: 4},
+                            {name:"Cerveja Long neck", price:"R$8.99", type_id: 4},
+                            {name:"Chope", price:"R$11,99", type_id: 4},
                             {name:"Gin Tônica", price:"R$21.99", type_id: 4},
                             {name:"Caipirinhas", price:"R$19.99", type_id: 4},
                             {name:"Taça de Vinho", price:"A partir de R$15.99", type_id: 4},
@@ -53,9 +53,7 @@ products = Product.create([{name:"Mussarela", price:"R$29.99", type_id: 1},
                             {name:"Refirgerante 2L", price:"R$15.00", type_id: 5},
                             {name:"Agua s/ gás", price:"R$3.50", type_id: 5},
                             {name:"Água c/ gás", price:"R$3.50", type_id: 5}
-                            
                                               
-
 ])
 
 favorites = Favorite.create()
