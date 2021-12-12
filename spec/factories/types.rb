@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :type do
-    kind { "MyString" }
+    kind { "Pizza Salgada" }
   end
 end
