@@ -1,5 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'factory' do
+    context 'when using standart factory' do
+      it 'be valid' do
+        produto = build(:product)
+        expect(produto).to be_valid
+      end
+    end
+  end
+
+  describe 'validations' do
+    context 'when product does not have an type_id'
+      it {expect(build(:product, type_id: nil)).not_to be_valid}
+
+      it {expect(build(:product, price: nil)).not_to be_valid}
+  end
 end
