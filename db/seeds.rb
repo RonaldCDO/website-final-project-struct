@@ -21,7 +21,8 @@ types = Type.create([{kind: "Pizza Salgada"},
                     {kind: "Pizza Doce"},
                     {kind: "Pizza Vegetariana"},
                     {kind: "Bebida alcóolica"},
-                    {kind: "Bebida não alcóolica"}])
+                    {kind: "Bebida não alcóolica"},
+                    {kind: "Combos"}])
 
 products = Product.create([{name:"Mussarela", price:"R$29.99", type_id: 1},
                             {name:"Calabresa", price:"R$32.99", type_id: 1},
@@ -52,7 +53,10 @@ products = Product.create([{name:"Mussarela", price:"R$29.99", type_id: 1},
                             {name:"Regrigerante lata", price:"R$5.00", type_id: 5},
                             {name:"Refirgerante 2L", price:"R$15.00", type_id: 5},
                             {name:"Agua s/ gás", price:"R$3.50", type_id: 5},
-                            {name:"Água c/ gás", price:"R$3.50", type_id: 5}
+                            {name:"Água c/ gás", price:"R$3.50", type_id: 5},
+                            {name:"Pizza + Refrigerante 2L", price:"R$37.99", type_id: 6},
+                            {name:"3 Pizzas para a turma", price:"R$69.99", type_id: 6},
+                            {name:"Piiza salgada + Pizza doce", price:"R$45.50", type_id: 6}
                                               
 ])
 
@@ -88,6 +92,9 @@ p27 = Product.find_by(id:27)
 p28 = Product.find_by(id:28)
 p29 = Product.find_by(id:29)
 p30 = Product.find_by(id:30)
+p31 = Product.find_by(id:31)
+p32 = Product.find_by(id:32)
+p33 = Product.find_by(id:33)
 
 
 p1.photo.attach(io: File.open('./public/mussarela.png'), filename: 'mussarela.png')
@@ -120,3 +127,6 @@ p27.photo.attach(io: File.open('./public/refri.jpg'), filename: 'refri.jpg')
 p28.photo.attach(io: File.open('./public/2l.jpg'), filename: '2l.jpg')
 p29.photo.attach(io: File.open('./public/agua.jpeg'), filename: 'agua.jpeg')
 p30.photo.attach(io: File.open('./public/agua2.jpg'), filename: 'agua2.jpg')
+p31.photo.attach(io: File.open('./public/combo1.jpg'), filename: 'combo1.jpg')
+p32.photo.attach(io: File.open('./public/combo3.jpeg'), filename: 'combo3.jpeg')
+p33.photo.attach(io: File.open('./public/combo2.jpg'), filename: 'combo2.jpg')
